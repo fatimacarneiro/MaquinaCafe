@@ -1,3 +1,5 @@
+import sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader;
+
 import java.util.Scanner;
 
 public class Main {
@@ -66,12 +68,21 @@ public class Main {
             opcaoEscolhida = menu.escolherOpcao(escolha);
         }
 
-        System.out.println("Você escolheu " + opcaoEscolhida.descricao + ". Para continuar, insira R$ " + opcaoEscolhida.valor);
-
-
-        if (escolha == 5) {
-          System.out.println("O nível de açúcar da sua bebida é 3. Deseja alterar?");
+        // ---------------- COMEÇA A PARTE DO AÇÚCAR
+        if (escolha == 5){
+            System.out.println("Você selecionou a opção " + opcaoEscolhida.descricao);
+            if (opcaoEscolhida.valor == 0) {
+                System.out.println("Essa opção é gratuita.");
+                // mostra preparo
+            }
         }
+        if (escolha != 5) {
+            System.out.println("Você escolheu " + opcaoEscolhida.descricao + ". O nível de açúcar da sua bebida é 3. Deseja alterar?");
+        } else {
+            // return modo de preparo água.
+        }
+
+
 
 
     }
