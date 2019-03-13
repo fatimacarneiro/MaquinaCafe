@@ -68,46 +68,28 @@ public class Main {
                 opcaoEscolhida = menu.escolherOpcao(escolha);
             }
 
-        // ---------------- COMEÇA A PARTE DO AÇÚCAR
-        if (escolha == 5){
-            System.out.println("Você selecionou a opção " + opcaoEscolhida.descricao);
-            if (opcaoEscolhida.valor == 0) {
-                System.out.println("Essa opção é gratuita.");
-                // mostra preparo
-            }
-        }
-        int nivelAcucar = 3;
-
-        if (escolha != 5) {
-            System.out.println("Você escolheu " + opcaoEscolhida.descricao + ". O nível de açúcar da sua bebida é 3. Deseja alterar? Digite 1 para sim e 2 para não");
-            Scanner mudaAcucar = new Scanner(System.in);
-            int alteraAcucar = mudaAcucar.nextInt();
-
-            if (alteraAcucar == 1) {
-                System.out.println("Para alterar o nível de açúcar, digite um número de 0 a 5, sendo 0 zero açúcar e 5 o máximo de açúcar");
-                Scanner quantidadeAcucar = new Scanner(System.in);
-                nivelAcucar = quantidadeAcucar.nextInt();
-                if (nivelAcucar >= 0 && nivelAcucar  <=5){
-                    System.out.println("Você pediu um " + opcaoEscolhida.descricao + (" e o nível de açúcar dele é: " + nivelAcucar) );
-                } else  {
-                    System.out.println("Opção inválida. A bebida será feita com o nível de açúcar 3.");
-                    nivelAcucar = 3;
-                }
-
-
-            } else {
-                System.out.println("Você pediu um " + opcaoEscolhida.descricao + (" e o nível de açúcar dele é: " + nivelAcucar) );
-            }
-
-        } else {
-            // return modo de preparo água.
-        }
-
+        //------------------   ACABA PEDIDO 
+            NivelAcucar nivelAcucar = new NivelAcucar();
+            nivelAcucar.alteraAcucar(escolha, opcaoEscolhida);
         // ----------------- COBRA
 
         double valorInserido;
+        double troco;
 
-        
+        System.out.println("Para continuar a compra de seu "+ opcaoEscolhida.descricao + ", insira o valor de R$ " + opcaoEscolhida.valor);
+        Scanner pegaValor = new Scanner(System.in);
+        valorInserido = pegaValor.nextDouble();
+
+        if (valorInserido < opcaoEscolhida.valor) {
+            System.out.println("Valor inserido inferior ao valor do produto. Retire seu valor de " + valorInserido + " e reinicie a compra.'");
+            System.exit(1);
+        } else if (valorInserido > opcaoEscolhida.valor) {
+            troco = (valorInserido - opcaoEscolhida.valor);
+            System.out.println("Valor inserido superior ao valor do produto. Retire seu troco de R$ " + troco);
+        }
+
+        System.out.println("Obrigada por comprar um " + opcaoEscolhida.descricao + ". Seu pedido  será prepado.");
+
 
         // ----------------- PREPARO
 
@@ -210,6 +192,7 @@ public class Main {
                 break;
         }
 
+        System.out.println("\n" + "Retire seu " + opcaoEscolhida.descricao);
 
     }
 }

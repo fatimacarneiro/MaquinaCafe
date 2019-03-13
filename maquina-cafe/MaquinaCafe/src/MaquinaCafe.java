@@ -1,5 +1,4 @@
 public class MaquinaCafe {
-    Menu menu;
-    NivelAcucar nivelAcucar;
+//    Menu menu = new Menu;
 
 }
