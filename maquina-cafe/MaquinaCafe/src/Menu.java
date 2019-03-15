@@ -2,22 +2,54 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    List<Opcao> listaOpcoes = new ArrayList<>();
+    List<Opcao> opcoes = new ArrayList<>();
 
-    public String toString() {
-        listaOpcoes.forEach((opcao) -> {
+    public List<Opcao> geraOpcoes() {
+
+        Opcao cafe = new Opcao(1, "Café", 1.0);
+        opcoes.add(cafe);
+
+        Opcao cafeComLeite = new Opcao(2, "Café com Leite", 1.5);
+        opcoes.add(cafeComLeite);
+
+        Opcao capuccino = new Opcao(3, "Capuccino", 2.0);
+        opcoes.add(capuccino);
+
+        Opcao cha = new Opcao(4, "Chá", 1.0);
+        opcoes.add(cha);
+
+        Opcao aguaQuente = new Opcao(5, "Água Quente", 0);
+        opcoes.add(aguaQuente);
+
+        return opcoes;
+    }
+
+    public void mostraMenu() {
+
+        this.opcoes.forEach(opcao -> {
             System.out.println(opcao);
         });
 
-        return "";
+        System.out.println();
     }
 
+    public void adicionarOpcao(Opcao opcaoEscolhida) {
+        opcoes.add(opcaoEscolhida);
+    }
 
-    public void adicionarOpcao (Opcao opcaoEscolhida) {
-        listaOpcoes.add(opcaoEscolhida);
+    public Opcao escolherOpcao(int escolha) {
 
+        for (int i = 0; i < opcoes.size(); i++) {
+
+            Opcao opcao = opcoes.get(i);
+
+            if(opcao.codigo == escolha){
+                return  opcao;
+            }
+
+        }
+
+
+        return null;
     }
 }
-
-
-
