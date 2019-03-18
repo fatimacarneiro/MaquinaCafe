@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Cobranca {
 
-    double valorInserido;
+   public double valorInserido;
     double troco;
 
     public void cobra(Opcao opcaoEscolhida) {
