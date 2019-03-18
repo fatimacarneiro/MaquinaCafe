@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class MaquinaCafe {
   public void maquinaCafe (){
 
-         Menu menu = new Menu();
-         menu.geraOpcoes();
-         menu.mostraMenu();
+      // ------------------------ AQUI COMEÇA A ESCOLHA DO USUÁRIO
 
-    // ------------------------ AQUI COMEÇA A ESCOLHA DO USUÁRIO
+      Menu menu = new Menu();
+      menu.geraOpcoes();
+      menu.mostraMenu();
+
 
     Scanner pedido = new Scanner(System.in);
         System.out.println("Olá! Para selecionar uma bebida, digite o número que antecede o nome do produto: ");

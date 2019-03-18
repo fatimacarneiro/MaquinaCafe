@@ -9,7 +9,6 @@ public class Opcao {
         this.valor = valor;
     }
 
-    @Override
     public String toString(){
         return codigo + " - " + descricao + " R$ " + valor;
     }

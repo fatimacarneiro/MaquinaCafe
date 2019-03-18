@@ -24,6 +24,7 @@ public class Menu {
         return opcoes;
     }
 
+
     public void mostraMenu() {
 
         this.opcoes.forEach(opcao -> {
@@ -33,9 +34,6 @@ public class Menu {
         System.out.println();
     }
 
-    public void adicionarOpcao(Opcao opcaoEscolhida) {
-        opcoes.add(opcaoEscolhida);
-    }
 
     public Opcao escolherOpcao(int escolha) {
 
