@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class EntradaUsuario {
 
-    public void confereUsuario() {
 
+
+    public void confereUsuario() {
         Estoque estoque = new Estoque();
         estoque.ingredientes();
 
@@ -21,6 +22,10 @@ public class EntradaUsuario {
 
             if (senha == 1234567) {
                 estoque.mostraEstoque();
+                estoque.mostraEstoque();
+                estoque.querAlterarEstoque();
+                estoque.ligaDecisaoUsuarioAoCodigo();
+//                estoque.alteraEstoque(Ingrediente);
             } else {
                 System.out.println("\n" + "Senha incorreta! Redirecionando usuário para Menu de compras");
             }
