@@ -1,15 +1,15 @@
 public class Ingrediente {
-    int codigoProduto;
-    String nome;
-    int porcao;
+    int codigoIngrediente;
+    String nomeIngrediente;
+    int porcaoIngrediente;
 
     public Ingrediente(int codigoProduto, String nome, int porcao) {
-        this.codigoProduto = codigoProduto;
-        this.nome = nome;
-        this.porcao = porcao;
+        this.codigoIngrediente = codigoProduto;
+        this.nomeIngrediente = nome;
+        this.porcaoIngrediente = porcao;
     }
     public String toString(){
-        return codigoProduto + " - " + nome + " - " + porcao;
+        return codigoIngrediente + " - " + nomeIngrediente + " - " + porcaoIngrediente;
     }
 }
 

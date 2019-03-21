@@ -1,113 +1,81 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Estoque {
-    ArrayList<Ingrediente> ingredientes = new ArrayList<>();
 
-    public List<Ingrediente> ingredientes() {
+    ItemEstoque itemEstoque = new ItemEstoque();
 
-        Ingrediente cafe = new Ingrediente(1, "Café", 5);
-        ingredientes.add(cafe);
 
-        Ingrediente leite = new Ingrediente(2, "Leite", 5);
-        ingredientes.add(leite);
+    private ArrayList<Ingrediente> geraEstoque() {
 
-        Ingrediente chocolate = new Ingrediente(3, "Chocolate", 3);
-        ingredientes.add(chocolate);
 
-        Ingrediente limao = new Ingrediente(4, "Limão", 3);
-        ingredientes.add(limao);
-
-        Ingrediente acucar = new Ingrediente(5, "Açúcar", 100);
-        ingredientes.add(acucar);
-
-        Ingrediente copo = new Ingrediente(6, "Copo", 20);
-        ingredientes.add(copo);
-
-        return ingredientes;
+        return itemEstoque.criaItensEstoque();
     }
 
-
     public void mostraEstoque() {
+        ArrayList<Ingrediente> listaEstoque = new ArrayList<>();
+        listaEstoque = geraEstoque();
 
-        ingredientes();
+        listaEstoque.forEach(ingrediente -> {
+            System.out.println("\n" + ingrediente.codigoIngrediente + " - " + ingrediente.nomeIngrediente + " - Contém " + ingrediente.porcaoIngrediente + " unidades.");
 
-        this.ingredientes.forEach(ingrediente -> {
-            System.out.println("\n" + ingrediente.codigoProduto + " - " + ingrediente.nome + " - Contém " + ingrediente.porcao + " unidades.");
         });
     }
 
-    int decisaoUsuario;
 
-    public int querAlterarEstoque() {
-        System.out.println("\n" + "Desejar adicionar ingredientes ao estoque? Digite 1 para sim e 2 para não.");
-        Scanner desejaAlterar = new Scanner(System.in);
-        decisaoUsuario = desejaAlterar.nextInt();
+    int desejaAlterar;
 
-        return decisaoUsuario;
+    public int desejaAlterarEstoque() {
+        System.out.println("\n" + "Deseja adicionar adicionar itens ao estoque? Digite 1 para SIM e 2 para NÃO ");
+        Scanner alterarEstoque = new Scanner(System.in);
+        desejaAlterar = alterarEstoque.nextInt();
+
+        return desejaAlterar;
     }
 
-//    public Estoque ligaDecisaoUsuarioAoCodigo(int decisaoUsuario, Ingrediente ingrediente) {
-//
-//        for (int i = 0; i < ingredientes.size(); i++) {
-//
-//            ingrediente = ingredientes.get(i);
-//
-//            if (ingrediente.codigoProduto == decisaoUsuario) {
-//                decisaoUsuario = ingrediente.codigoProduto;
-//            }
-//
-//        }
-//        System.out.println(ingrediente.nome + ingrediente.codigoProduto + "esse é o produto");
-//        return null;
-//    }
+    int itemQueSeraAdicionado;
+    Ingrediente itemEscolhido;
 
-    public void ligaDecisaoUsuarioAoCodigo(Ingrediente ingrediente) {
-        for (int i = 0; i < ingredientes.size(); i++) {
 
-            ingrediente = ingredientes.get(i);
+    public void adicionarEstoque() {
 
-            if (ingrediente.codigoProduto == decisaoUsuario) {
-                decisaoUsuario = ingrediente.codigoProduto;
+        if (desejaAlterar == 1) {
+            System.out.println("\n" + "Digite o código do produto que você irá repor. ");
+            Scanner alterarItemEstoque = new Scanner(System.in);
+            itemQueSeraAdicionado = alterarItemEstoque.nextInt();
+            if (itemQueSeraAdicionado != 1 && itemQueSeraAdicionado != 2 && itemQueSeraAdicionado != 3 && itemQueSeraAdicionado != 4 && itemQueSeraAdicionado != 5) {
+                System.out.println("Opção inválida. Favor digitar o número que antecede o produto. Exemplo: para escolher Café, digite 1");
+            }
+            else{
+                itemEscolhido =  itemEstoque.selecionarItemParaAdicionar(itemQueSeraAdicionado);
             }
 
+
         }
-        System.out.println(ingrediente.nome + ingrediente.codigoProduto + "esse é o produto");
     }
 
-    public void ligaDecisaoUsuarioAoCodigo() {
+    int valorAdicionado = 0;
+    int valorRetirado = 0;
+    public void adicionaItemEstoque() {
+
+        System.out.println("\n" + "Você selecionou o " + itemEscolhido.nomeIngrediente + "\n" + "Digite o número de porções que deseja adicionar");
+        Scanner adicionaEstoque = new Scanner(System.in);
+        valorAdicionado = adicionaEstoque.nextInt();
+
+        itemEscolhido.porcaoIngrediente = itemEscolhido.porcaoIngrediente + valorAdicionado;
+
+        System.out.println("A nova quantidade total de " + itemEscolhido.nomeIngrediente + " é de " + itemEscolhido.porcaoIngrediente);
     }
+
+//    public void retiraEstoque() {
+//
+//        System.out.println("\n" + "Você selecionou o " + itemEscolhido.nomeIngrediente + "\n" + "Digite o número de porções que deseja adicionar");
+//        Scanner adicionaEstoque = new Scanner(System.in);
+//        valorRetirado = adicionaEstoque.nextInt();
+//
+//        itemEscolhido.porcaoIngrediente = itemEscolhido.porcaoIngrediente - valorRetirado;
+//
+//        System.out.println("A nova quantidade total de " + itemEscolhido.nomeIngrediente + " é de " + itemEscolhido.porcaoIngrediente);
+//    }
+
 }
-
-//    public int alteraEstoque(Ingrediente ingrediente) {
-//        if (decisaoUsuario == 1) {
-//            System.out.println("\n" + "Digite o código do produto que deseja adicionar ao estoque");
-//            Scanner produtoAlterado = new Scanner(System.in);
-//            ingrediente.codigoProduto = produtoAlterado.nextInt();
-//            System.out.println("\n" + "Você selecionou o código " + ingrediente.codigoProduto + "referente ao produto " + ingrediente.nome);
-//
-//
-//            int pegaQuantidadeParaVerificar;
-//            System.out.println("\n" + "Digite a quantidade de produto inserida");
-//            Scanner alteraEstoque = new Scanner(System.in);
-//            pegaQuantidadeParaVerificar = alteraEstoque.nextInt();
-//
-//            if (pegaQuantidadeParaVerificar > 0 && pegaQuantidadeParaVerificar < 100) {
-//                ingrediente.porcao = pegaQuantidadeParaVerificar;
-//            }
-//
-//        }
-//        return ingrediente.porcao;
-//    }
-
-
-
-
-//    boolean prossegue;
-
-//    public boolean confereEstoque() {
-//
-//        return prossegue;
-//    }
-
