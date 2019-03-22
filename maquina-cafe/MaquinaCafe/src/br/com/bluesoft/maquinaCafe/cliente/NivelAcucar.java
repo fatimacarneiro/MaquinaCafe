@@ -1,3 +1,5 @@
+package br.com.bluesoft.maquinaCafe.cliente;
+
 import java.util.Scanner;
 
 public  class  NivelAcucar {

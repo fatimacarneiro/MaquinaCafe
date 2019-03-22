@@ -1,3 +1,5 @@
+package br.com.bluesoft.maquinaCafe.produtoEstoque;
+
 public class Ingrediente {
     int codigoIngrediente;
     String nomeIngrediente;

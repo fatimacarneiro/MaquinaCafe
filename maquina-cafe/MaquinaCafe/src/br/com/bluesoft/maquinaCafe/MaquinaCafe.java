@@ -1,3 +1,8 @@
+package br.com.bluesoft.maquinaCafe;
+
+import br.com.bluesoft.maquinaCafe.cliente.*;
+import br.com.bluesoft.maquinaCafe.produtoEstoque.Estoque;
+
 import java.util.Scanner;
 
 public class MaquinaCafe {
@@ -25,12 +30,12 @@ public class MaquinaCafe {
                 estoque.adicionaItemEstoque();
 
             } else {
-                System.out.println("\n" + "Senha incorreta! Redirecionando usuário para Menu de compras");
+                System.out.println("\n" + "Senha incorreta! Redirecionando usuário para br.com.bluesoft.maquinaCafe.cliente.Menu de compras");
             }
         }
     }
 
-    
+
   public void maquinaCafe (){
 
 
@@ -42,7 +47,7 @@ public class MaquinaCafe {
 
 
     Scanner pedido = new Scanner(System.in);
-        System.out.println("Olá! Para selecionar uma bebida, digite o número que antecede o nome do produto: ");
+        System.out.println("Para selecionar uma bebida, digite o número que antecede o nome do produto: ");
     int escolha = pedido.nextInt();
 
     //  VALIDAÇÃO

@@ -1,3 +1,5 @@
+package br.com.bluesoft.maquinaCafe.produtoEstoque;
+
 import java.util.ArrayList;
 
 public class ItemEstoque {

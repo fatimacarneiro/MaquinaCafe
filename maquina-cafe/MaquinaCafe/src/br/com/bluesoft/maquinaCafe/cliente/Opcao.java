@@ -1,3 +1,5 @@
+package br.com.bluesoft.maquinaCafe.cliente;
+
 public class Opcao {
     int codigo;
     double valor;

@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7e6219d-202f-4452-a713-ce83542798ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ingrediente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MaquinaCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaquinaCafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaquinaCafe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Cobranca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Estoque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Ingrediente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/ItemEstoque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/MaquinaCafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/NivelAcucar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Opcao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Pedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Preparo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cobranca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Cobranca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntradaUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ingrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Ingrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/ItemEstoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaquinaCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/MaquinaCafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NivelAcucar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/NivelAcucar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Opcao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Opcao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preparo.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,35 +40,37 @@
     <session id="-286013462">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12683" />
+          <entry key="java" value="12709" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12683" />
+          <entry key="JAVA" value="12709" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="113" />
+          <entry key="java" value="115" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="113" />
+          <entry key="JAVA" value="115" />
         </counts>
       </usages-collector>
     </session>
@@ -55,73 +78,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MaquinaCafe.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/MaquinaCafe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EntradaUsuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cobranca.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Opcao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ItemEstoque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ingrediente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Estoque.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+            <state relative-caret-position="990">
+              <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,10 +99,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Menu.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Pedido.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Cobranca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Opcao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-start-line="2" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/ItemEstoque.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Ingrediente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Estoque.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,31 +189,54 @@
         <option value="$PROJECT_DIR$/src/Teste.java" />
         <option value="$PROJECT_DIR$/src/NivelAcucar.java" />
         <option value="$PROJECT_DIR$/src/Preparo.java" />
-        <option value="$PROJECT_DIR$/src/Pedido.java" />
         <option value="$PROJECT_DIR$/src/Cobranca.java" />
         <option value="$PROJECT_DIR$/src/Ingredientes.java" />
-        <option value="$PROJECT_DIR$/src/Opcao.java" />
         <option value="$PROJECT_DIR$/src/Menu.java" />
-        <option value="$PROJECT_DIR$/src/EntradaUsuario.java" />
         <option value="$PROJECT_DIR$/src/Estoque.java" />
         <option value="$PROJECT_DIR$/src/ItemEstoque.java" />
         <option value="$PROJECT_DIR$/src/Ingrediente.java" />
-        <option value="$PROJECT_DIR$/src/MaquinaCafe.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/EntradaUsuario.java" />
+        <option value="$PROJECT_DIR$/src/Opcao.java" />
+        <option value="$PROJECT_DIR$/src/MaquinaCafe.java" />
+        <option value="$PROJECT_DIR$/src/Pedido.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/Cliente/Pedido.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Pedido.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/MaquinaCafe.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="957" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <flattenPackages Scope="false" />
+      <compactDirectories Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="MaquinaCafe" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MaquinaCafe" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="MaquinaCafe" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MaquinaCafe" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/br/com/bluesoft/maquinaCafe" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,16 +253,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553199420258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553261541564" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.bluesoft.maquinaCafe" />
+      <recent name="br.com.bluesoft.maquinaCafe.produtoPacote" />
+      <recent name="br.com.bluesoft.maquinaCafe.Cliente" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Cliente" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,9 +286,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.bluesoft.maquinaCafe.Main" />
       <module name="MaquinaCafe" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -262,10 +314,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="957" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="957" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2028754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20713525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -274,13 +325,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32947975" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31445086" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.31445086" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.31445086" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3283237" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -372,93 +423,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Preparo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NivelAcucar.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/NivelAcucar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pedido.java">
+    <entry file="file://$PROJECT_DIR$/src/EntradaUsuario.java" />
+    <entry file="file://$PROJECT_DIR$/src/Preparo.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/MaquinaCafe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="990">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cobranca.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Pedido.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Cobranca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Opcao.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Opcao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="15" />
+          <caret selection-start-line="2" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Estoque.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/ItemEstoque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="375">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Ingrediente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/produtoEstoque/Estoque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItemEstoque.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquinaCafe/cliente/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ingrediente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="210">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EntradaUsuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaquinaCafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

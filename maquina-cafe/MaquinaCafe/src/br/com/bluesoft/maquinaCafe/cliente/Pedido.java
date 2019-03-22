@@ -1,3 +1,5 @@
+package br.com.bluesoft.maquinaCafe.cliente;
+
 public class Pedido {
 
     public void prepadaMostraEntregaPedido (Opcao opcaoEscolhida) {
@@ -58,8 +60,6 @@ public class Pedido {
                     System.out.println("Adicionando o leite...");
                     Thread.sleep(1000);
                     System.out.println("Adicionando o chocolate...");
-                    Thread.sleep(1000);
-                    System.out.println("Adicionando a canela em pó...");
                     Thread.sleep(1000);
                     System.out.println("Misturando os ingredientes...");
                     Thread.sleep(1000);
