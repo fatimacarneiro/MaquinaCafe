@@ -16,24 +16,38 @@ public class MaquinaCafe {
         return direcionaUsuario;
     }
 
-    public void direcionaParaEstoque(){
-        if (direcionaUsuario == 2) {
-            System.out.println("\n" + "Para continuar, digite sua senha");
-            int senha;
-            Scanner pegaSenha = new Scanner(System.in);
-            senha = pegaSenha.nextInt();
+    public void direcionaParaEstoque() {
+        boolean respostaUsuario = false;
+        while (!respostaUsuario) {
+            if (direcionaUsuario == 2) {
+                System.out.println("\n" + "Para continuar, digite sua senha");
+                int senha;
+                Scanner pegaSenha = new Scanner(System.in);
+                senha = pegaSenha.nextInt();
 
-            if (senha == 123) {
-                estoque.mostraEstoque();
-                estoque.desejaAlterarEstoque();
-                estoque.adicionarEstoque();
-                estoque.adicionaItemEstoque();
+                if (senha == 123) {
+                    estoque.mostraEstoque();
+                    estoque.desejaAlterarEstoque();
+                    estoque.adicionarEstoque();
+                    estoque.adicionaItemEstoque();
 
-            } else {
-                System.out.println("\n" + "Senha incorreta! Redirecionando usuário para br.com.bluesoft.maquinaCafe.cliente.Menu de compras");
+                } else {
+                    System.out.println("\n" + "Senha incorreta! Redirecionando usuário para Menu de compras");
+                    maquinaCafe();
+                }
+            }
+            int resposta = 1;
+            System.out.println("Deseja reabastecer o estoque? Digite 1 para SIM e 2 para NÃO.");
+            Scanner lerEntrada = new Scanner(System.in);
+            resposta = lerEntrada.nextInt();
+
+            if(resposta == 2){
+                    respostaUsuario = true;
             }
         }
     }
+
+
 
 
   public void maquinaCafe (){
